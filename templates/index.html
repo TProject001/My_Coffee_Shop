@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock title %}
+{% block body %}
+<section class="hero">
+  <div class="hero-content">
+      <h1>Life Begins After Coffee</h1>
+      <p>Discover the perfect blend</p>
+      <a href="menu.html" class="btn"><span style="color: white;"> Explore Menu </span></a> 
+  </div>
+</section>
+
+<section class="featured">
+  <h2>Featured Items</h2>
+  <div class="grid-container">
+    <div class="grid-item">
+      <img src="static/img/coffee1.jpg" alt="Coffee 1">
+      <h3>Espresso</h3>
+      <p>Espresso is made by forcing nearly boiling water through finely-ground coffee beans, which results in a concentrated, syrup-like coffee drink.</p>
+    </div>
+    <div class="grid-item">
+      <img src="static/img/coffee2.jpg" alt="Coffee 2">
+      <h3>Latte</h3>
+      <p>Caffè latte, often shortened to just latte in English, is a coffee drink of Italian origin made with espresso and steamed milk</p>
+    </div>
+    <div class="grid-item">
+      <img src="static/img/coffee3.jpg" alt="Coffee 3">
+      <h3>Cappuccino</h3>
+      <p>Cappuccinos are a classic Italian type of coffee drink made of espresso, steamed milk, and thick foam in equal parts.</p>
+    </div>
+  </div>
+</section>
+{% endblock body %}

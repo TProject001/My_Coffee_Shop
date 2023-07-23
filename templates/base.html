@@ -1,0 +1,39 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> {% block title %}{% endblock title %} My Coffee Shop</title>
+    <style>{% block style %}{% endblock style%}</style>
+    <!--  google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Dancing+Script:wght@700&family=Freehand&family=Merriweather:ital@1&family=Montserrat&family=Poppins:ital@1&display=swap" rel="stylesheet">
+    <link href="static/style/styles.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <header>
+        <nav>
+          <ul>
+            <li><img src="https://clipart-library.com/img/1695731.png"></li>
+            <li><a href="home">Home</a></li>
+            <li><a href="menu">Menu</a></li>
+            <li><a href="about2">About</a></li>
+            <li><a href="contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- following div create alert for contact formstuts i.e form is submitted or not-->
+      {% if messages %}
+      {% for message in messages %}
+      <div class="alert alert-{{ message.tags }} alert-dismissible fade show my-0 py-0" role="alert">
+        <strong>{{ message }}</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      {% endfor %}
+      {% endif %}
+    {% block body %} {% endblock body %}
+    <footer>
+        <p>&copy; 2023 My Coffee Shop. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

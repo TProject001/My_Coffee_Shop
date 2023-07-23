@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block title %}About{% endblock title %}
+{% block body %}
+  <section class="about">
+    <h2>About Us</h2>
+    <p>Welcome to My Coffee Shop, your go-to destination for the perfect cup of coffee. We are passionate about crafting exceptional coffee experiences for our customers.</p>
+    <p>At My Coffee Shop, we source the finest coffee beans from around the world and carefully roast them to bring out their unique flavors. Our skilled baristas are dedicated to creating artful and delicious coffee beverages that will tantalize your taste buds.</p>
+    <p>Whether you're looking for a classic espresso, a creamy latte, or a refreshing iced coffee, we have a wide range of options to suit your preferences. Our cozy atmosphere and friendly staff will make your visit a memorable one.</p>
+    <p><b>But don't just take our word for it, here's what our customers have to say:</b></p>
+
+    <div class="reviews">
+      <div class="review-item">
+        <div class="review-content">
+          <div class="review-img">
+            <img src="static/img/customer1.jpg" alt="Customer 1">
+          </div>
+          <cite>John Doe</cite>
+          <blockquote>
+            <p>The best coffee in town! I'm a regular customer and I'm always impressed by the quality and consistency. The staff is friendly and knowledgeable. Highly recommend!</p>
+          </blockquote>
+          
+        </div>
+       
+      </div>
+      <div class="review-item">
+        <div class="review-content">
+          <div class="review-img">
+            <img src="static/img/customer2.jpg" alt="Customer 2">
+          </div>
+          <cite>Jane Smith</cite>
+          <blockquote>
+            <p>My Coffee Shop is my happy place. The aroma of freshly brewed coffee hits you as soon as you walk in. The baristas are true artists, and the drinks are always on point. Love this place!</p>
+          </blockquote>  
+        </div>
+      </div>
+    </div>
+
+    <p>Join us at My Coffee Shop and embark on a delightful coffee journey. We look forward to serving you!</p>
+  </section>
+{% endblock body %}
